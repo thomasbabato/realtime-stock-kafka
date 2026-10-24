@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: store-simulator
+  datasource:
+    url: jdbc:postgresql://localhost:5432/store
+    username: store
+    password: store
+
+simulator:
+  stores: 10          # number of stores to simulate
+  products: 50        # number of products in the catalogue
+  interval-ms: 2000   # each store creates one movement every 2 seconds

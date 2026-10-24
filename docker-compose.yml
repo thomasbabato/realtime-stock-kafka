@@ -27,6 +27,8 @@ services:
       POSTGRES_PASSWORD: store
     ports:
       - "5432:5432"
+    volumes:
+      - ./db/store/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   hq-db:
     image: postgres:16
